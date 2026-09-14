@@ -8,3 +8,12 @@ This is why I wrote this Powershell scripts that reads out the Bitlocker key fro
 * SMTP Email-Server
 
 ## Setup
+1. Log into your Passwordstate and add a new list for your bitlocker keys
+2. Right click on the the new list and press "Edit Properties"
+3. Click on "API Keys & Settings" and press "Generate Key"
+
+4. Copy the Key, scroll down and Save!
+
+5. Log into your Windows AD Server
+6. Place the Script on the Server
+7. Open it with the Editor.
