@@ -9,11 +9,19 @@ This is why I wrote this Powershell scripts that reads out the Bitlocker key fro
 
 ## Setup
 1. Log into your Passwordstate and add a new list for your bitlocker keys
-2. Right click on the the new list and press "Edit Properties"
-3. Click on "API Keys & Settings" and press "Generate Key"
+2. Click on the list add press "Permalink". Look at the URL. There should be plid=YOUR_LIST_ID. Copy this id. We will need it later.
+3. Right click on the the new list and press "Edit Properties"
+4. Click on "API Keys & Settings" and press "Generate Key"
+![APItoken](https://github.com/wolkenlosIT/proxmox-nextcloudTALK-bridge/blob/main/setupimages/nextcloudapptoken.jpg)
+5. Copy the Key, scroll down and Save!
 
-4. Copy the Key, scroll down and Save!
+6. Log into your Windows AD Server
+7. Place the Script on the Server
+8. Open it with the Editor. You have to edit the following variables: $APIKey, $PasswordstateURL, $OUtoScan, $ListID, $EmailTo, $EmailFrom, $EmailSubj, $EmailBody, $EmailSmtpSrv
+9. Save and close
+10. The script should work now.
 
-5. Log into your Windows AD Server
-6. Place the Script on the Server
-7. Open it with the Editor.
+Optional
+11. To make it run automatically open the the Task Scheduler and make the scheduler run the script how often you like.
+The user running the script needs needs permission to read the Active Directory
+
