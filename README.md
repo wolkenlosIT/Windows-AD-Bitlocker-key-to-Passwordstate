@@ -12,7 +12,7 @@ This is why I wrote this Powershell scripts that reads out the Bitlocker key fro
 2. Click on the list add press "Permalink". Look at the URL. There should be plid=YOUR_LIST_ID. Copy this id. We will need it later.
 3. Right click on the the new list and press "Edit Properties"
 4. Click on "API Keys & Settings" and press "Generate Key"
-![APItoken](https://github.com/wolkenlosIT/proxmox-nextcloudTALK-bridge/blob/main/setupimages/nextcloudapptoken.jpg)
+![APItoken](https://github.com/wolkenlosIT/Windows-AD-Bitlocker-key-to-Passwordstate/blob/main/pwstateapikey.jpg)
 5. Copy the Key, scroll down and Save!
 
 6. Log into your Windows AD Server
